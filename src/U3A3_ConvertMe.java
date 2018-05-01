@@ -16,7 +16,23 @@ public class U3A3_ConvertMe extends javax.swing.JFrame {
     public U3A3_ConvertMe() {
         initComponents();
     }
+public static double inchesToCentimetres(double measure) {
+int choice;
+choice = 2;
+String.valueOf(choice);
+    double cMeasure;
+cMeasure = choice * 2.54;
+    return cMeasure;
+}
 
+public static double  feetToCentimetres(double measure) {
+int choice;
+choice = 45;
+String.valueOf(choice);
+    double ccMeasure;
+ccMeasure = choice * 30;
+    return ccMeasure;
+}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -146,29 +162,49 @@ public class U3A3_ConvertMe extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     private void conversionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_conversionButtonActionPerformed
-        String choice;
-        choice = conversionChoice.getText();
-//        if(choice == 1); {
-//        
-//    }
+        int choice;
+               Scanner input = new Scanner(System.in);
+               double measurement;
+               choice = input.nextInt();
+               
+               if (choice == 1) {
+                       inchesToCentimetres();
+               } else {
+                       feetToCentimetres();
+               }
+               input.close();
 
-//            finalConversion.setText(+ " = " +);
+            finalConversion.setText();
     }//GEN-LAST:event_conversionButtonActionPerformed
 
 public static double inchesToCentimetres(double measure) {
-double cMeasure;
+int choice;
+choice = 45;
+String.valueOf(choice);
+    double cMeasure;
+cMeasure = choice * 2.54;
+    return cMeasure;
 }
 
 public static double  feetToCentimetres(double measure) {
-double cMeasure;
+int choice;
+choice = 45;
+String.valueOf(choice);
+    double ccMeasure;
+ccMeasure = choice * 30;
+    return ccMeasure;
 }
 
 public static double yardsToMetres(double measure) {
 double mMeasure;
+mMeasure = ();
+    return mMeasure;
 }
 
 public static double  milesToKilometres(double measure) {
 double kMeasure;
+kMeasure = ();
+    return kMeasure;
 }
     /**
      * @param args the command line arguments
